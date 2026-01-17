@@ -10,7 +10,7 @@ function SignInButton() {
   return (
     <button
       onClick={handleSignIn}
-      className="px-6 py-4 bg-zinc-100 flex items-center gap-2 font-medium rounded-lg hover:bg-zinc-200 transition-colors text-zinc-900"
+      className="px-6 py-4 bg-zinc-100 flex items-center gap-2 font-medium rounded-lg hover:bg-zinc-300 transition-colors text-zinc-900"
     >
       <Icon icon="uil:google" className="size-5" />
       Sign In with Google
