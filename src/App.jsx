@@ -27,7 +27,7 @@ function App() {
       ) : user === undefined ? (
         <div className="flex flex-col items-center gap-4">
           <div className="flex items-center justify-center gap-4 -mb-2">
-            <img src="src/assets/image.png" alt="Talons In Twilight Logo" className="w-16 "/>
+            <img src="./src/assets/image.png" alt="Talons In Twilight Logo" className="w-16 "/>
           <h1 className="text-4xl font-normal font-title">
             <span className="text-blue-800">TALONS&nbsp;</span> 
             IN&nbsp;
