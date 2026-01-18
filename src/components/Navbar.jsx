@@ -7,7 +7,7 @@ function Navbar({ user }) {
     <nav className="w-full p-6 flex items-center justify-between">
       <h1 className="flex items-center gap-2 text-xl font-medium">
         <Icon icon="tabler:list-check" className="size-6" />
-        Todo List
+        <span className="text-sky-500">Talons In Twilight</span> Mod Development Task Tracker
       </h1>
       <div className="flex items-center gap-4">
         <img
