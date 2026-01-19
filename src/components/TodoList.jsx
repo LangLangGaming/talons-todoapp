@@ -3,9 +3,7 @@ import {
   collection,
   deleteDoc,
   doc,
-  query,
   updateDoc,
-  where,
 } from "firebase/firestore";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { database } from "../firebase.config";
@@ -20,9 +18,7 @@ function TodoList({ user }) {
   const [editingTaskId, setEditingTaskId] = useState(null);
   const [editTaskName, setEditTaskName] = useState("");
   const [editPersonName, setEditPersonName] = useState("");
-  const [snapshot] = useCollection(
-    query(collection(database, "tasks"), where("owner", "==", user.uid))
-  );
+  const [snapshot] = useCollection(collection(database, "tasks"));
 
   function updateTaskStatus(id, done) {
     updateDoc(doc(database, "tasks", id), {
